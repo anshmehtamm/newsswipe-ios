@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB374B822B82DC3C00CFB3E9 /* UserIdentifierManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB374B812B82DC3C00CFB3E9 /* UserIdentifierManager.swift */; };
+		FB3CBA592B820003007D8325 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3CBA582B820003007D8325 /* LoadingView.swift */; };
+		FB7C8E082B852FA400926BD7 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB7C8E072B852FA400926BD7 /* secrets.plist */; };
 		FBCC28932B6EDEEE00C640F1 /* newsswipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC28922B6EDEEE00C640F1 /* newsswipeApp.swift */; };
 		FBCC28952B6EDEEE00C640F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC28942B6EDEEE00C640F1 /* ContentView.swift */; };
 		FBCC28972B6EDEEF00C640F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCC28962B6EDEEF00C640F1 /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		FBCC28A42B6EDEEF00C640F1 /* newsswipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC28A32B6EDEEF00C640F1 /* newsswipeTests.swift */; };
 		FBCC28AE2B6EDEEF00C640F1 /* newsswipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC28AD2B6EDEEF00C640F1 /* newsswipeUITests.swift */; };
 		FBCC28B02B6EDEEF00C640F1 /* newsswipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC28AF2B6EDEEF00C640F1 /* newsswipeUITestsLaunchTests.swift */; };
+		FBCC28BD2B6EF29C00C640F1 /* profilepoc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FBCC28BC2B6EF29C00C640F1 /* profilepoc.jpeg */; };
+		FBCC28BF2B6F05E200C640F1 /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC28BE2B6F05E200C640F1 /* NewsItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB374B812B82DC3C00CFB3E9 /* UserIdentifierManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentifierManager.swift; sourceTree = "<group>"; };
+		FB38A64D2B7740750087EE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FB3CBA582B820003007D8325 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FB7C8E072B852FA400926BD7 /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
 		FBCC288F2B6EDEEE00C640F1 /* newsswipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsswipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCC28922B6EDEEE00C640F1 /* newsswipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsswipeApp.swift; sourceTree = "<group>"; };
 		FBCC28942B6EDEEE00C640F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,8 @@
 		FBCC28A92B6EDEEF00C640F1 /* newsswipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsswipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCC28AD2B6EDEEF00C640F1 /* newsswipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsswipeUITests.swift; sourceTree = "<group>"; };
 		FBCC28AF2B6EDEEF00C640F1 /* newsswipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsswipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBCC28BC2B6EF29C00C640F1 /* profilepoc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profilepoc.jpeg; sourceTree = "<group>"; };
+		FBCC28BE2B6F05E200C640F1 /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +105,15 @@
 		FBCC28912B6EDEEE00C640F1 /* newsswipe */ = {
 			isa = PBXGroup;
 			children = (
+				FB38A64D2B7740750087EE8A /* Info.plist */,
 				FBCC28922B6EDEEE00C640F1 /* newsswipeApp.swift */,
 				FBCC28942B6EDEEE00C640F1 /* ContentView.swift */,
+				FB7C8E072B852FA400926BD7 /* secrets.plist */,
 				FBCC28962B6EDEEF00C640F1 /* Assets.xcassets */,
 				FBCC28982B6EDEEF00C640F1 /* Preview Content */,
+				FBCC28BE2B6F05E200C640F1 /* NewsItemView.swift */,
+				FB3CBA582B820003007D8325 /* LoadingView.swift */,
+				FB374B812B82DC3C00CFB3E9 /* UserIdentifierManager.swift */,
 			);
 			path = newsswipe;
 			sourceTree = "<group>";
@@ -123,6 +139,7 @@
 			children = (
 				FBCC28AD2B6EDEEF00C640F1 /* newsswipeUITests.swift */,
 				FBCC28AF2B6EDEEF00C640F1 /* newsswipeUITestsLaunchTests.swift */,
+				FBCC28BC2B6EF29C00C640F1 /* profilepoc.jpeg */,
 			);
 			path = newsswipeUITests;
 			sourceTree = "<group>";
@@ -231,6 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7C8E082B852FA400926BD7 /* secrets.plist in Resources */,
+				FBCC28BD2B6EF29C00C640F1 /* profilepoc.jpeg in Resources */,
 				FBCC289A2B6EDEEF00C640F1 /* Preview Assets.xcassets in Resources */,
 				FBCC28972B6EDEEF00C640F1 /* Assets.xcassets in Resources */,
 			);
@@ -258,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBCC28952B6EDEEE00C640F1 /* ContentView.swift in Sources */,
+				FB3CBA592B820003007D8325 /* LoadingView.swift in Sources */,
+				FB374B822B82DC3C00CFB3E9 /* UserIdentifierManager.swift in Sources */,
 				FBCC28932B6EDEEE00C640F1 /* newsswipeApp.swift in Sources */,
+				FBCC28BF2B6F05E200C640F1 /* NewsItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,9 +444,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"newsswipe/Preview Content\"";
+				DEVELOPMENT_TEAM = LG7NCNYCX5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = newsswipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -450,9 +473,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"newsswipe/Preview Content\"";
+				DEVELOPMENT_TEAM = LG7NCNYCX5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = newsswipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
