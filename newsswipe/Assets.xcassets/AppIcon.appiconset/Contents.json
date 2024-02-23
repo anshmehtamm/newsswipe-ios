@@ -1,10 +1,7 @@
 {
   "images" : [
     {
-<<<<<<< HEAD
-=======
       "filename" : "NewsSwipe-logos-1024x1024.png",
->>>>>>> c67216e (initial commit)
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
