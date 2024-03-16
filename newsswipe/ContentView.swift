@@ -44,10 +44,11 @@ class CallNewsApi: ObservableObject {
     @Published var firstLoadScreen = true
     @Published var allCaughtUp = false
     @Published var showWebView = false
+    @Published var showHomeView = false
     func getNewsItems() ->Void {
         guard !isLoading else {return}
         isLoading = true
-        let urlString = "https://trial.apim.trial-newsswipe.gravitee.xyz/news/get_top_news"
+        let urlString = "http://54.242.117.139/news"
         var urlComponents = URLComponents(string: urlString)!
         
         var queryItems = [URLQueryItem(name: "user", value: UserDefaults.standard.string(forKey: UserIdentifierManager.shared.userIDKey))]
@@ -100,15 +101,17 @@ struct ContentView: View {
     @StateObject var newss = CallNewsApi()
     var body: some View {
         Group{
-            if newss.firstLoadScreen == true  {
+            if newss.showHomeView == true{
+                HomeView(viewModel: newss).animation(.easeInOut)
+            }
+            else if newss.firstLoadScreen == true  {
                 LoadingView()
             }else{
-                
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVStack(spacing: 0) {
                         ForEach(newss.newsItems) { news in
                             
-                            NewsItemView( viewModel: newss,news: news).onAppear(perform: {
+                            NewsItemView( viewModel: newss,news: news, shouldShowHomeView: true).onAppear(perform: {
                                 newss.loadMore(currentItem: news )
                             }).id(news.id)
                             
@@ -119,7 +122,8 @@ struct ContentView: View {
                     }
                 }.scrollTargetBehavior(.paging)
                     .ignoresSafeArea()
-                    
+                
+                
             }
         }.onAppear(perform: {
             UserIdentifierManager.shared.loadUser(ob:newss)

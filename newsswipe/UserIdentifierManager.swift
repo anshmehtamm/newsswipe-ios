@@ -46,13 +46,12 @@ class UserIdentifierManager {
     
      func sendUserIDToServer(obb:CallNewsApi) {
 
-             let urlString = "https://trial.apim.trial-newsswipe.gravitee.xyz/news/create"
+             let urlString = "http://54.242.117.139/news/create"
              guard let url = URL(string: urlString) else { return }
              
              var request = URLRequest(url: url)
              request.httpMethod = "POST"
              request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-             request.addValue(apiKeyyy, forHTTPHeaderField: "X-Gravitee-Api-Key")
              let body: [String: Any] = ["user":  String(UUID().uuidString.prefix(15))]
              request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
              URLSession.shared.dataTask(with: request) { data, response, error in
